@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 
 # CSV file path
 csv_file = Path("raw_data/World-Stock-Prices-Dataset.csv")
+
 # Load data from CSV
 df = pd.read_csv(csv_file)
 
@@ -30,9 +31,9 @@ try:
 
     # Insert the data into the PostgreSQL table
     df.to_sql("stock_prices", connection, if_exists="replace", index=False)
-
     print("Data loaded successfully into PostgreSQL.")
 except Exception as e:
     print(f"Error: {e}")
+
 finally:
     connection.close()
