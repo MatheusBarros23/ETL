@@ -1,4 +1,4 @@
-> **Insert**: Kaggle rest api instructions,  Docker instructions
+> **INSERT**: Kaggle rest api instructions,  Docker instructions
 
 # Setting Up PostgreSQL and Metabase Containers with Docker
 
