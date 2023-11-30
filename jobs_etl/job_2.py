@@ -3,7 +3,7 @@ from pathlib2 import Path
 from sqlalchemy import create_engine
 
 # CSV file path
-csv_file = Path("raw_data/dados_modelo_SC.csv")
+csv_file = Path("raw_data/dados.csv")
 # Load data from CSV
 df = pd.read_csv(csv_file)
 
@@ -30,7 +30,7 @@ try:
     connection = engine.connect()
 
     # Insert the data into the PostgreSQL table
-    df.to_sql("dados_modelo_SC", connection, if_exists="append", index=False)
+    df.to_sql("dadosSC", connection, if_exists="append", index=False)
 
     print("Data loaded successfully into PostgreSQL.")
 except Exception as e:
