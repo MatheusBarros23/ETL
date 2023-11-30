@@ -103,6 +103,7 @@ Antes de executar o script, certifique-se de ter o seguinte instalado:
 - Certifique-se de revisar e personalizar as configurações no script antes da execução, se necessário.
 - Se necessário, você pode ajustar as permissões de execução do PowerShell para restringir ou permitir a execução de scripts.
 - Se durante a execução do script você encontrar mensagens de erro relacionadas ao psql, como "psql : O termo 'psql' não é reconhecido como nome de cmdlet", pode ignorá-las. Esses erros podem ocorrer devido a configurações específicas do ambiente e geralmente não afetam a funcionalidade do script.
+- Os dados foram sintetizados utilizando a biblioteca Faker.
 
 Ao seguir essas instruções, os usuários do seu projeto terão um guia claro sobre como executar o script `run_all.ps1` e quaisquer considerações adicionais que possam ser relevantes para a configuração ou execução bem-sucedida do projeto.
 
